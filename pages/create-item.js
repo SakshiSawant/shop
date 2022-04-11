@@ -12,7 +12,7 @@ import { nftaddress,nftmarketaddress } from '../config';
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json';
 import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json';
 import { EtherscanProvider } from '@ethersproject/providers'
-// import Image from 'next/Image'
+import Image from 'next/Image'
 
 
 export default function CreateItem() {
