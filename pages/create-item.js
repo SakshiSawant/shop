@@ -135,8 +135,6 @@ export default function CreateItem() {
                             className="rounded mt-4"
                             width={100}
                             height={350} 
-                            // blurDataURL="data:..." automatically provided
-                            // placeholder="blur" // Optional blur-up while loading
                           />
                         )
                     }
