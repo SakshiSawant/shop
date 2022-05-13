@@ -89,9 +89,11 @@ const UserMenu = ({ user, mutate }) => {
             <Link passHref href={`/user/${user.username}`}>
               <a className={styles.item}>{account_type}</a>
             </Link>
-            <Link passHref href={`/create-cause`}>
+            {/* <Link passHref href={`/create-cause`}> */}
+            <Link passHref href='https://charityapp.vercel.app/'>
               <a className={styles.item}>Create Cause</a>
             </Link>
+
 
             {/* Later uncomment */}
             {/* <Link passHref href={`/mycauses`}>
@@ -124,6 +126,8 @@ const UserMenu = ({ user, mutate }) => {
         {/* If user is the donor */}
         {visible && account_type === 'donor' && (
           <div className={styles.menu}>
+            <Link passHref href="https://charityapp.vercel.app/">Donate
+        </Link>
             <Link passHref href={`/user/${user.username}`}>
               <a className={styles.item}>Profile</a>
             </Link>
@@ -206,7 +210,7 @@ const Nav = () => {
           justifyContent="space-between"
         >
           <Link href="/">
-            <a className={styles.logo}>Next.js MongoDB App</a>
+            <a className={styles.logo}>Helping Hands</a>
           </Link>
           <Container>
             {user ? (
@@ -215,7 +219,7 @@ const Nav = () => {
               </>
             ) : (
               <>
-                <Link passHref href="/login">
+                {/* <Link passHref href="/login">
                   <ButtonLink
                     size="small"
                     type="success"
@@ -229,6 +233,12 @@ const Nav = () => {
                 <Link passHref href="/sign-up">
                   <Button size="small" type="success">
                     Sign Up
+                  </Button>
+                </Link> */}
+
+                  <Link passHref href="https://metamask.io/">
+                  <Button size="small" type="success">
+                    Connect Your Wallet
                   </Button>
                 </Link>
               </>
