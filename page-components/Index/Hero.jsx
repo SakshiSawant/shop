@@ -8,25 +8,25 @@ const Hero = () => {
     <Wrapper>
       <div>
         <h1 className={styles.title}>
-          <span className={styles.nextjs}>Next.js</span>
-          <span className={styles.mongodb}>MongoDB</span>
-          <span>App</span>
+          <span className={styles.nextjs}>Helping Hands</span>
+          <span className={styles.mongodb}>Make India Smile :)</span>
         </h1>
         <Container justifyContent="center" className={styles.buttons}>
           <Container>
-            <Link passHref href="/feed">
-              <ButtonLink className={styles.button}>Explore Feed</ButtonLink>
+            <Link passHref href="/login">
+              <ButtonLink className={styles.button}>Login</ButtonLink>
             </Link>
           </Container>
+
           <Spacer axis="horizontal" size={1} />
+
+          <Container justifyContent="center" className={styles.buttons}>
           <Container>
-            <ButtonLink
-              href="https://github.com/hoangvvo/nextjs-mongodb-app"
-              type="secondary"
-              className={styles.button}
-            >
-              GitHub
-            </ButtonLink>
+            <Link passHref href="/sign-up">
+              <ButtonLink className={styles.button}>SignUp</ButtonLink>
+            </Link>
+          </Container>
+          
           </Container>
         </Container>
         {/* <p className={styles.subtitle}>

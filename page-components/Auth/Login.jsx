@@ -51,7 +51,8 @@ const Login = () => {
   return (
     <Wrapper className={styles.root}>
       <div className={styles.main}>
-        <h1 className={styles.title}>Login to App</h1>
+        <h1 className={styles.title}>Login</h1>
+        <Spacer size={0.8} axis="vertical" />
         <form onSubmit={onSubmit}>
           <Input
             ref={emailRef}
@@ -83,11 +84,11 @@ const Login = () => {
             Log in
           </Button>
           <Spacer size={0.25} axis="vertical" />
-          <Link href="/forget-password" passHref>
+          {/* <Link href="/forget-password" passHref>
             <ButtonLink type="success" size="large" variant="ghost">
               Forget password
             </ButtonLink>
-          </Link>
+          </Link> */}
         </form>
       </div>
       <div className={styles.footer}>

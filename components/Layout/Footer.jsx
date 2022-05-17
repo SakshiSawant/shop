@@ -7,16 +7,11 @@ import Wrapper from './Wrapper';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Wrapper>
-        {/* <Text color="accents-7">
-          Made with ❤️, 🔥, and a keyboard by{' '}
-          <TextLink href="https://hoangvvo.com/" color="link">
-            Hoang Vo
-          </TextLink>
-          .
-        </Text> */}
-        <Spacer size={1} axis="vertical" />
+      <Wrapper justifyContent="center">
+        {/* <Spacer size={0.3} axis="vertical" /> */}
         <ThemeSwitcher />
+        <Spacer size={0.5} axis="vertical" />
+      <p>© Copyright 2021-2022 Helping Hands </p>
       </Wrapper>
     </footer>
   );
